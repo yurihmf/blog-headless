@@ -12,11 +12,14 @@ module.exports = {
       colors: {
         'dark-body': '#13131F',
         'purple-light': '#8257E6',
+        'bg-scroll': '#282830',
       },
       height: {
         '900': '56.25rem',
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }

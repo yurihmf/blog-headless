@@ -1,11 +1,16 @@
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React from 'react';
-
-const categories = [{name: 'Animes', slug: 'animes'}, {name: 'Séries', slug: 'series'}, {name: 'Filmes', slug: 'filmes'}]
+import { getCategories } from '../services';
 
 const Header = () => {
   const router = useRouter();
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    getCategories()
+                  .then((newCategories) => setCategories(newCategories.categories));
+  },[]);
   return (
     <header className="flex justify-between container px-10 mx-auto py-8"> 
       <Link href="/">
@@ -22,7 +27,7 @@ const Header = () => {
             <Link key={category.slug} href={`/category/${category.slug}`}>
               <span className={`text-slate-200 text-base cursor-pointer border-purple-light font-inter
               ${router.pathname == `/category/${category.slug}` ? "border-b-2" : ""}`}>
-                {category.name}
+                {category.title}
               </span>
             </Link>
         ))}

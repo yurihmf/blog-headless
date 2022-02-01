@@ -8,3 +8,4 @@ export { default as PostCard } from './PostCard';
 export { default as PostCardDescription } from './PostCardDescription';
 export { default as RelevantPosts } from './RelevantPosts';
 export { default as ContentHome } from './ContentHome';
+export { default as PostContent } from './PostContent';
