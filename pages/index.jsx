@@ -10,7 +10,7 @@ export default function Home({posts, latestPosts}) {
         <title>Blog - Codelandia</title>
       </Head>
       <Banner posts={posts}/>
-      <section className="grid grid-cols-12 gap-x-4 mt-12">
+      <section className="grid lg:grid-cols-12 grid-cols-1 gap-x-4 mt-12">
           <ContentHome posts={posts}/>
           <RelevantPosts relevantPosts={posts}/>
           <LatestPosts latestPosts={latestPosts} />

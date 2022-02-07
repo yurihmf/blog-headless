@@ -16,7 +16,7 @@ const Header = () => {
       <Link href="/">
         <h3 className="text-purple-light text-2xl cursor-pointer font-lexend">Naped</h3>
       </Link>
-      <nav className="flex items-center gap-x-20">
+      <nav className="flex items-center gap-x-4 lg:gap-x-20">
       <Link href="/">
               <span className={`text-slate-200 text-base cursor-pointer border-purple-light font-inter
               ${router.pathname == "/" ? "border-b-2" : ""}`}>
@@ -32,7 +32,7 @@ const Header = () => {
             </Link>
         ))}
         <Link href={`/account`}>
-            <span className="flex items-center text-slate-200 ml-10 border border-purple-light rounded-xl px-5 py-1 text-sm hover:bg-purple-light cursor-pointer font-lexend transition all ease-in-out delay-75">Minha conta</span>
+            <span className="flex items-center text-slate-200 lg:ml-10 border border-purple-light rounded-xl px-5 py-1 text-sm hover:bg-purple-light cursor-pointer font-lexend transition all ease-in-out delay-75">Minha conta</span>
         </Link>
       </nav>
     </header>

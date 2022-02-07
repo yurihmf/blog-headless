@@ -13,6 +13,8 @@ module.exports = {
         'dark-body': '#13131F',
         'purple-light': '#8257E6',
         'bg-scroll': '#282830',
+        'gray-desc': '#C4C4C4',
+        'input': '#282830'
       },
       height: {
         '900': '56.25rem',
