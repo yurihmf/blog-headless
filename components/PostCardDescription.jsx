@@ -15,7 +15,7 @@ const PostCardDefinition = ({posts}) => {
               <div className="font-lexend text-sm text-white font-normal leading-5">{post.node.title}</div>
               <div className="font-inter text-xs text-white font-normal leading-5">{post.node.subtitle}</div>
               <div className="font-inter text-xs text-white font-semibold leading-5">{moment(post.node.createdAt).format('DD/MM/YYYY')}</div>
-              <Link href={`http://localhost:3000/post/${post.node.slug}`}>
+              <Link href={`/post/${post.node.slug}`}>
                 <p className=" text-white font-inter font-medium text-sm bg-purple-light px-4 py-1 max-w-max rounded-sm cursor-pointer transition all ease-in-out delay-75 hover:bg-white hover:text-purple-light">Ler notícias</p>
               </Link>
           </div>
