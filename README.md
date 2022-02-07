@@ -1,34 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Sobre
 
-## Getting Started
+Esse projeto foi desenvolvido para eu treinar um pouco mais de NextJS e conhecer o conceito de CMS Headless, e nesse caso utilizei o GraphCMS para servir o conteúdo, e NextJS para desenvolver o Front-End. Achei muito interessante esse conceito de headless, é muito fácil adicionar conteúdos de qualquer tipo já que tem uma customização bem alta, e também é bem prático e rápido na parte dos dados, já que utilizei GraphQL para servir e recebe-los. E este layout eu peguei de um desafio(Desafio 10) da comunidade Codelândia do [Iuri Code](https://github.com/iuricode).
 
-First, run the development server:
+### Como rodar o projeto
+ Você pode ver o projeto em produção [`Projeto hospedado na vercel`](https://blog-headless-xi.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- Clonar o repositório
+- Dentro do terminal do projeto rode `npm install`
+- Agora só rodar um `npm run dev`
+- E pronto!!
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ps: Deixei o arquivo `.env` pois ele possui a rota de api para o graphcms onde está o meu conteúdo de teste. Mas caso queira usar o seu o próprio conteúdo basta trocar o a url dessa variável!
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
